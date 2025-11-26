@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  qbittorrent-daily-report:
+    image: ghcr.io/alfredooe/qbittorrent-daily-report:latest
+    container_name: qbittorrent-daily-report
+    environment:
+      - QBITTORRENT_URL=
+      - QBITTORRENT_USERNAME=
+      - QBITTORRENT_PASSWORD=
+      - DISCORD_WEBHOOK_URL=
+    restart: unless-stopped
