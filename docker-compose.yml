@@ -7,5 +7,5 @@ services:
       - QBITTORRENT_USERNAME=
       - QBITTORRENT_PASSWORD=
       - DISCORD_WEBHOOK_URL=
-      - POLL_INTERVAL_MINUTES=1440
+      - POLLING_INTERVAL=1440
     restart: unless-stopped
